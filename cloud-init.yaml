@@ -1,0 +1,8 @@
+#cloud-config
+package_upgrade: true
+packages:
+  - python3-pip
+runcmd:
+  - pip3 install --upgrade aiohttp
+  - pip3 install azure-identity
+  - pip3 install redis
